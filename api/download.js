@@ -1,4 +1,4 @@
-import { put, head } from "@vercel/blob";
+import { put, list } from "@vercel/blob";
 
 export default async function handler(req, res) {
   res.setHeader("Access-Control-Allow-Origin", "*");
@@ -9,37 +9,38 @@ export default async function handler(req, res) {
 
   var blobName = "counts/" + slug + ".json";
 
-  if (req.method === "GET") {
+  async function getCount() {
     try {
-      var blob = await head(blobName);
-      var res2 = await fetch(blob.url);
-      var data = await res2.json();
-      return res.status(200).json({ count: data.count || 0 });
+      var blobs = await list({ prefix: blobName });
+      if (!blobs.blobs.length) return 0;
+      var response = await fetch(blobs.blobs[0].url);
+      var text = await response.text();
+      var data = JSON.parse(text);
+      return typeof data.count === "number" ? data.count : 0;
     } catch {
-      return res.status(200).json({ count: 0 });
+      return 0;
     }
+  }
+
+  if (req.method === "GET") {
+    var count = await getCount();
+    return res.status(200).json({ count: count });
   }
 
   if (req.method === "POST") {
     try {
-      var count = 0;
-      try {
-        var blob = await head(blobName);
-        var res2 = await fetch(blob.url);
-        var data = await res2.json();
-        count = data.count || 0;
-      } catch {}
-
+      var count = await getCount();
       count++;
 
-      await put(blobName, JSON.stringify({ count }), {
+      await put(blobName, JSON.stringify({ count: count }), {
         access: "public",
         addRandomSuffix: false,
         allowOverwrite: true,
       });
 
-      return res.status(200).json({ count });
+      return res.status(200).json({ count: count });
     } catch (err) {
+      console.error(err);
       return res.status(500).json({ error: err.message });
     }
   }
