@@ -9,19 +9,18 @@ export default async function handler(req, res) {
 
   var blobName = "counts/" + slug + ".json";
 
-  async function getCount() {
+    async function getCount() {
     try {
-      var blobs = await list({ prefix: blobName });
-      if (!blobs.blobs.length) return 0;
-      var response = await fetch(blobs.blobs[0].url);
-      var text = await response.text();
-      var data = JSON.parse(text);
-      return typeof data.count === "number" ? data.count : 0;
+        var blobs = await list({ prefix: blobName });
+        if (!blobs.blobs.length) return 0;
+        var sorted = blobs.blobs.sort((a, b) => new Date(b.uploadedAt) - new Date(a.uploadedAt));
+        var response = await fetch(sorted[0].url + "?t=" + Date.now());
+        var data = JSON.parse(await response.text());
+        return typeof data.count === "number" ? data.count : 0;
     } catch {
-      return 0;
+        return 0;
     }
-  }
-
+    }
   if (req.method === "GET") {
     var count = await getCount();
     return res.status(200).json({ count: count });
