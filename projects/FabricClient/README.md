@@ -1,6 +1,6 @@
 # FClient
 
-A Minecraft 1.21.11 Fabric client base built with Mojang mappings.
+A Minecraft 1.21.11 Fabric "Utility" client base built with Mojang mappings.
 
 ## Features
 
