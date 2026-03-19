@@ -5,7 +5,7 @@ A Minecraft 1.21.11 Fabric client base built with Mojang mappings.
 ## Features
 
 - Module Manager
-- AutoSprint Module (example module)
+- AutoSprint Module
 
 ## Modules
 
@@ -13,7 +13,7 @@ A Minecraft 1.21.11 Fabric client base built with Mojang mappings.
 - Description = Automatically sprints for you
 - Keybind  = V
 
-You can easily add more modules using the ModuleManager
+You can easily add more modules using the ModuleManager. The AutoSprint module is just a example.
 
 ## Requirements
 
