@@ -1,0 +1,194 @@
+[
+  {
+    "slug": "FabricClient",
+    "name": "FabricClient",
+    "desc": "A minecraft 1.21.11 fabric client base",
+    "license": "MIT",
+    "category": "General",
+    "readme": "# FClient\n\nA Minecraft 1.21.11 Fabric client base built with Mojang mappings.\n\n## Features\n\n- Module Manager\n- AutoSprint Module\n\n## Modules\n\n- Name = AutoSprint\n- Description = Automatically sprints for you\n- Keybind  = V\n\n## Requirements\n\n- Minecraft 1.21.11\n- Fabric Loader\n- Fabric API\n\n",
+    "tree": [
+      {
+        "name": "gradle",
+        "path": "gradle",
+        "type": "dir",
+        "children": [
+          {
+            "name": "wrapper",
+            "path": "gradle/wrapper",
+            "type": "dir",
+            "children": [
+              {
+                "name": "gradle-wrapper.jar",
+                "path": "gradle/wrapper/gradle-wrapper.jar",
+                "type": "file"
+              },
+              {
+                "name": "gradle-wrapper.properties",
+                "path": "gradle/wrapper/gradle-wrapper.properties",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "src",
+        "path": "src",
+        "type": "dir",
+        "children": [
+          {
+            "name": "main",
+            "path": "src/main",
+            "type": "dir",
+            "children": [
+              {
+                "name": "java",
+                "path": "src/main/java",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "deezsrc",
+                    "path": "src/main/java/deezsrc",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "fclient",
+                        "path": "src/main/java/deezsrc/fclient",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "mixin",
+                            "path": "src/main/java/deezsrc/fclient/mixin",
+                            "type": "dir",
+                            "children": [
+                              {
+                                "name": "ExampleMixin.java",
+                                "path": "src/main/java/deezsrc/fclient/mixin/ExampleMixin.java",
+                                "type": "file"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "modules",
+                            "path": "src/main/java/deezsrc/fclient/modules",
+                            "type": "dir",
+                            "children": [
+                              {
+                                "name": "impl",
+                                "path": "src/main/java/deezsrc/fclient/modules/impl",
+                                "type": "dir",
+                                "children": [
+                                  {
+                                    "name": "AutoSprint.java",
+                                    "path": "src/main/java/deezsrc/fclient/modules/impl/AutoSprint.java",
+                                    "type": "file"
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "Module.java",
+                                "path": "src/main/java/deezsrc/fclient/modules/Module.java",
+                                "type": "file"
+                              },
+                              {
+                                "name": "ModuleManager.java",
+                                "path": "src/main/java/deezsrc/fclient/modules/ModuleManager.java",
+                                "type": "file"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "FClient.java",
+                            "path": "src/main/java/deezsrc/fclient/FClient.java",
+                            "type": "file"
+                          },
+                          {
+                            "name": "FClientDataGenerator.java",
+                            "path": "src/main/java/deezsrc/fclient/FClientDataGenerator.java",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "resources",
+                "path": "src/main/resources",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "assets",
+                    "path": "src/main/resources/assets",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "fclient",
+                        "path": "src/main/resources/assets/fclient",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "icon.png",
+                            "path": "src/main/resources/assets/fclient/icon.png",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "fabric.mod.json",
+                    "path": "src/main/resources/fabric.mod.json",
+                    "type": "file"
+                  },
+                  {
+                    "name": "fclient.mixins.json",
+                    "path": "src/main/resources/fclient.mixins.json",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "build.gradle",
+        "path": "build.gradle",
+        "type": "file"
+      },
+      {
+        "name": "gradle.properties",
+        "path": "gradle.properties",
+        "type": "file"
+      },
+      {
+        "name": "gradlew",
+        "path": "gradlew",
+        "type": "file"
+      },
+      {
+        "name": "gradlew.bat",
+        "path": "gradlew.bat",
+        "type": "file"
+      },
+      {
+        "name": "LICENSE",
+        "path": "LICENSE",
+        "type": "file"
+      },
+      {
+        "name": "README.md",
+        "path": "README.md",
+        "type": "file"
+      },
+      {
+        "name": "settings.gradle",
+        "path": "settings.gradle",
+        "type": "file"
+      }
+    ],
+    "files": 18
+  }
+]

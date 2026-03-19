@@ -1,0 +1,3 @@
+Name =  FabricClient
+Desc = A minecraft 1.21.11 fabric client base
+License = MIT
