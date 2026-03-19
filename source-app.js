@@ -40,22 +40,50 @@
     });
 
   function renderTop() {
-    document.getElementById("src-top").innerHTML =
-      "<div class='src-bc'><a href='projects.html'>projects</a> <span class='bc-sep'>/</span> " + esc(slug) + "</div>" +
-      "<div class='src-title'>" + esc(project.name) + "</div>" +
-      "<div class='src-desc'>" + esc(project.desc) + "</div>" +
-      "<div class='src-meta'>" +
-      "<span class='tag'>" + esc(project.category) + "</span>" +
-      "<span class='tag'>" + esc(project.license) + "</span>" +
-      "<button class='dl-zip-btn' id='dl-zip-btn'>" +
-      "<svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>" +
-      "<path d='M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4'/>" +
-      "<polyline points='7 10 12 15 17 10'/>" +
-      "<line x1='12' y1='15' x2='12' y2='3'/>" +
-      "</svg>" +
-      "<span>Download ZIP</span>" +
-      "</button>" +
-      "</div>";
+    fetch("/api/download?slug=" + slug)
+      .then(function(r) { return r.json(); })
+      .then(function(data) {
+        document.getElementById("src-top").innerHTML =
+          "<div class='src-bc'><a href='projects.html'>projects</a> <span class='bc-sep'>/</span> " + esc(slug) + "</div>" +
+          "<div class='src-title'>" + esc(project.name) + "</div>" +
+          "<div class='src-desc'>" + esc(project.desc) + "</div>" +
+          "<div class='src-meta'>" +
+          "<span class='tag'>" + esc(project.category) + "</span>" +
+          "<span class='tag'>" + esc(project.license) + "</span>" +
+          "<span class='tag' id='dl-count'>⬇ " + (data.count || 0) + " downloads</span>" +
+          "<button class='dl-zip-btn' id='dl-zip-btn'>" +
+          "<svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>" +
+          "<path d='M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4'/>" +
+          "<polyline points='7 10 12 15 17 10'/>" +
+          "<line x1='12' y1='15' x2='12' y2='3'/>" +
+          "</svg>" +
+          "<span>Download ZIP</span>" +
+          "</button>" +
+          "</div>";
+
+        initDownloadButton();
+      })
+      .catch(function() {
+        // render without count if api fails
+        document.getElementById("src-top").innerHTML =
+          "<div class='src-bc'><a href='projects.html'>projects</a> <span class='bc-sep'>/</span> " + esc(slug) + "</div>" +
+          "<div class='src-title'>" + esc(project.name) + "</div>" +
+          "<div class='src-desc'>" + esc(project.desc) + "</div>" +
+          "<div class='src-meta'>" +
+          "<span class='tag'>" + esc(project.category) + "</span>" +
+          "<span class='tag'>" + esc(project.license) + "</span>" +
+          "<button class='dl-zip-btn' id='dl-zip-btn'>" +
+          "<svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>" +
+          "<path d='M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4'/>" +
+          "<polyline points='7 10 12 15 17 10'/>" +
+          "<line x1='12' y1='15' x2='12' y2='3'/>" +
+          "</svg>" +
+          "<span>Download ZIP</span>" +
+          "</button>" +
+          "</div>";
+
+        initDownloadButton();
+      });
   }
 
   function initDownloadButton() {
@@ -77,7 +105,13 @@
       "<path d='M12 2v4m0 12v4m10-10h-4M6 12H2m15.07-5.07l-2.83 2.83M9.76 14.24l-2.83 2.83m11.14 0l-2.83-2.83M9.76 9.76L6.93 6.93'/>" +
       "</svg>" +
       "<span>Creating ZIP...</span>";
-
+    fetch("/api/download?slug=" + slug, { method: "POST" })
+      .then(function(r) { return r.json(); })
+      .then(function(data) {
+        var countEl = document.getElementById("dl-count");
+        if (countEl) countEl.textContent = "⬇ " + data.count + " downloads";
+      })
+      .catch(function() {});
     var zip = new JSZip();
     var files = getAllFiles(project.tree);
     var loaded = 0;
