@@ -4,4 +4,10 @@
   "dependencies": {
     "@vercel/blob": "^0.23.0"
   }
+  {
+  "scripts": {
+    "build": "next build && node build.js"
+  
+}
+
 }
