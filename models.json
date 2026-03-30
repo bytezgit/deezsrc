@@ -66,14 +66,113 @@
     "license": "Public Domain"
   },
   {
-    "id": "Short Sword",
-    "name": "Short Sword by joney_lol [CC-BY] via Poly Pizza",
-    "author": "joney_lol",
-    "source": "poly pizza",
-    "sourceUrl": "https://poly.pizza/m/8euoHHy9Le",
+    "id": "Low Poly Arm",
+    "name": "Lowpoly Arm by bananalogos21 is licensed under Creative Commons Attribution",
+    "author": "bananalogos21",
+    "source": "sketchfab",
+    "sourceUrl": "https://sketchfab.com/3d-models/lowpoly-arm-ac8b5f0864da49619e7731d87bc1c24d",
     "embedUrl": "",
-    "downloadUrl": "/models/Short Sword.glb",
-    "tags": ["short swordd", "lowpoly"],
+    "downloadUrl": "/models/lowpoly_arm.glb",
+    "tags": ["low poly arm", "lowpoly"],
+    "license": "CC-BY"
+  },
+  {
+    "id": "FPS Arms",
+    "name": "Rigged Fps Arms by J-Toastie [CC-BY] via Poly Pizza",
+    "author": "J-Toastie",
+    "source": "poly pizza",
+    "sourceUrl": "https://poly.pizza/m/XdHWM8uSAO",
+    "embedUrl": "",
+    "downloadUrl": "/models/Rigged Fps Arms.glb",
+    "tags": ["fos arms", "lowpoly"],
+    "license": "CC-BY"
+  },
+  {
+    "id": "Shotgun",
+    "name": "Shotgun by Quaternius",
+    "author": "Quaternius",
+    "source": "poly pizza",
+    "sourceUrl": "https://poly.pizza/m/ZmPTnh7njL",
+    "embedUrl": "",
+    "downloadUrl": "/models/Shotgun.glb",
+    "tags": ["shotgun", "lowpoly"],
+    "license": "Public Domain"
+  },
+  {
+    "id": "Assault Rifle",
+    "name": "Assault Rifle by Quaternius",
+    "author": "Quaternius",
+    "source": "poly pizza",
+    "sourceUrl": "https://poly.pizza/m/K2lXTYFSLC",
+    "embedUrl": "",
+    "downloadUrl": "/models/Assault Rifle.glb",
+    "tags": ["assault rifle", "lowpoly"],
+    "license": "Public Domain"
+  },
+  {
+    "id": "Sniper Rifle",
+    "name": "Sniper Rifle by Quaternius",
+    "author": "Quaternius",
+    "source": "poly pizza",
+    "sourceUrl": "https://poly.pizza/m/ASOMZIErq3",
+    "embedUrl": "",
+    "downloadUrl": "/models/Sniper Rifle.glb",
+    "tags": ["sniper rifle", "lowpoly"],
+    "license": "Public Domain"
+  },
+  {
+    "id": "Pistol",
+    "name": "Pistol by Zsky [CC-BY] via Poly Pizza",
+    "author": "Zsky",
+    "source": "poly pizza",
+    "sourceUrl": "https://poly.pizza/m/3To2e7sKmO",
+    "embedUrl": "",
+    "downloadUrl": "/models/Pistol.glb",
+    "tags": ["pistol", "lowpoly"],
+    "license": "CC-BY"
+  },
+  {
+    "id": "Submachine Gun",
+    "name": "Submachine Gun by Quaternius",
+    "author": "Quaternius",
+    "source": "poly pizza",
+    "sourceUrl": "https://poly.pizza/m/nsP3JukU73",
+    "embedUrl": "",
+    "downloadUrl": "/models/Submachine Gun.glb",
+    "tags": ["submachine gun", "lowpoly"],
+    "license": "Public Domain"
+  },
+  {
+    "id": "Basic Character",
+    "name": "Basic Character by Yogoshimo 2.0 [CC-BY] via Poly Pizza",
+    "author": "Yogoshimo 2.0",
+    "source": "poly pizza",
+    "sourceUrl": "https://poly.pizza/m/044joTnRwEO",
+    "embedUrl": "",
+    "downloadUrl": "/models/Basic Character.glb",
+    "tags": ["character", "lowpoly"],
+    "license": "CC-BY"
+  },
+  {
+    "id": "Hand Grenade",
+    "name": "Hand Grenade by CreativeTrio",
+    "author": "CreativeTrio",
+    "source": "poly pizza",
+    "sourceUrl": "https://poly.pizza/m/YWhHlmKOtx",
+    "embedUrl": "",
+    "downloadUrl": "/models/Hand Grenade.glb",
+    "tags": ["grenade", "lowpoly"],
+    "license": "CC-BY"
+  },
+  {
+    "id": "Cigarette",
+    "name": "Cigarette by Zgeal [CC-BY] via Poly Pizza",
+    "author": "Zgeal",
+    "source": "poly pizza",
+    "sourceUrl": "https://poly.pizza/m/2RL6h8MbDPb",
+    "embedUrl": "",
+    "downloadUrl": "/models/Cigarette.glb",
+    "tags": ["cigarette", "lowpoly"],
     "license": "CC-BY"
   }
 ]
