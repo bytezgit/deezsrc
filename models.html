@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3D Models — Theke</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="models.css">
+<link rel="stylesheet" href="models-viewer.css">
+</head>
+<body>
+<canvas id="c"></canvas>
+<div class="noise"></div>
+<div class="lines"></div>
+<div class="vignette"></div>
+<nav>
+<a href="index.html" class="logo">Theke</a>
+<div class="nav-r">
+<a href="index.html">home</a>
+<a href="projects.html">projects</a>
+<a href="models.html">3d models</a>
+</div>
+</nav>
+<div class="wrap">
+<div class="ph">
+<h1>3D Models</h1>
+<p>a curated archive of free 3d models from around the web</p>
+</div>
+<div class="m-filters-bar">
+<div class="filters" id="m-filters"></div>
+<div class="m-search-wrap">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+<input id="m-search" class="m-search" type="text" placeholder="search models...">
+</div>
+</div>
+<div class="m-grid" id="m-grid"></div>
+<div class="m-empty" id="m-empty" style="display:none">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+<span>no models found</span>
+</div>
+<footer><p>Theke 2026</p></footer>
+</div>
+<!-- Model Preview Modal -->
+<div class="m-modal" id="m-modal">
+<div class="m-modal-backdrop" id="m-modal-backdrop"></div>
+<div class="m-modal-box">
+<div class="m-modal-head">
+<div class="m-modal-title" id="m-modal-title"></div>
+<button class="m-modal-close" id="m-modal-close">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+</button>
+</div>
+<div class="m-modal-embed" id="m-modal-embed"></div>
+<div class="m-modal-footer" id="m-modal-footer"></div>
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<!-- GLTFLoader for r128 -->
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+<script src="three-bg.js"></script>
+<script src="models-app.js"></script>
+</body>
+</html>

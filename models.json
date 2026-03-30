@@ -1,0 +1,79 @@
+[
+  {
+    "id": "Pixel Sunglasses",
+    "name": "Pixel Sunglasses by TRASH - TANUKI [CC-BY] via Poly Pizza",
+    "author": "TRASH - TANUKI",
+    "source": "poly pizza",
+    "sourceUrl": "https://poly.pizza/m/8blN2D2T1Hk",
+    "embedUrl": "",
+    "downloadUrl": "/models/Pixel Sunglasses.glb",
+    "tags": ["sunglasses", "lowpoly"],
+    "license": "CC-BY"
+  },
+  {
+    "id": "Matchbox",
+    "name": "Matchbox by Quaternius",
+    "author": "Quaternius",
+    "source": "poly pizza",
+    "sourceUrl": "https://poly.pizza/m/22eU6FjNQ8",
+    "embedUrl": "",
+    "downloadUrl": "/models/Matchbox.glb",
+    "tags": ["maatchbox", "lowpoly"],
+    "license": "Public Domain"
+  },
+  {
+    "id": "Pirate hat",
+    "name": "Pirate hat by Poly by Google [CC-BY] via Poly Pizza",
+    "author": "Poly by Google",
+    "source": "poly pizza",
+    "sourceUrl": "https://poly.pizza/m/9QEds6cYAy6",
+    "embedUrl": "",
+    "downloadUrl": "/models/Pirate hat.glb",
+    "tags": ["pirate hat", "lowpoly"],
+    "license": "CC-BY"
+  },
+  {
+    "id": "Cowboy hat",
+    "name": "Cowboy hat by Poly by Google [CC-BY] via Poly Pizza",
+    "author": "Poly by Google",
+    "source": "poly pizza",
+    "sourceUrl": "https://poly.pizza/m/aWzUlZtGLC0",
+    "embedUrl": "",
+    "downloadUrl": "/models/Cowboy hat.glb",
+    "tags": ["cowboy hat", "lowpoly"],
+    "license": "CC-BY"
+  },
+  {
+    "id": "Sail Ship",
+    "name": "Sail Ship by Quaternius",
+    "author": "Quaternius",
+    "source": "poly pizza",
+    "sourceUrl": "https://poly.pizza/m/cIzO4MBPqI",
+    "embedUrl": "",
+    "downloadUrl": "/models/Sail Ship.glb",
+    "tags": ["sail ship", "lowpoly"],
+    "license": "Public Domain"
+  },
+  {
+    "id": "Cannon",
+    "name": "Cannon by Quaternius",
+    "author": "Quaternius",
+    "source": "poly pizza",
+    "sourceUrl": "https://poly.pizza/m/qIAvoaawib",
+    "embedUrl": "",
+    "downloadUrl": "/models/Cannon.glb",
+    "tags": ["cannon", "lowpoly"],
+    "license": "Public Domain"
+  },
+  {
+    "id": "Short Sword",
+    "name": "Short Sword by joney_lol [CC-BY] via Poly Pizza",
+    "author": "joney_lol",
+    "source": "poly pizza",
+    "sourceUrl": "https://poly.pizza/m/8euoHHy9Le",
+    "embedUrl": "",
+    "downloadUrl": "/models/Short Sword.glb",
+    "tags": ["short swordd", "lowpoly"],
+    "license": "CC-BY"
+  }
+]

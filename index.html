@@ -1,100 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Theke</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Theke</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <canvas id="c"></canvas>
-  <div class="noise"></div>
-  <div class="lines"></div>
-  <div class="vignette"></div>
-  <nav>
-    <a href="index.html" class="logo">Theke</a>
-    <div class="nav-r">
-      <a href="index.html">home</a>
-      <a href="projects.html">projects</a>
-    </div>
-  </nav>
-  <div class="wrap">
-    <section class="hero">
-      <div class="hero-glow"></div>
-      <div class="hero-ring"></div>
-      <div class="hero-ring"></div>
-      <div class="hero-ring"></div>
-      <h1><span class="w">We</span> <span class="w">Code</span> <span class="w">Random</span> <span class="w">Shit.</span></h1>
-      <p class="hero-p">open source projects from bytez & feast</p>
-      <div class="scroll-hint"><div class="sh-line"></div></div>
-      <div class="hero-line"></div>
-    </section>
-
-    <section class="s-pad">
-      <div class="s-label">Team</div>
-      <div class="people">
-        <div class="person">
-          <div class="person-glow"></div>
-          <h3>Bytez</h3>
-          <p>Knows coding</p>
-          <p>Codes random shit</p>
-          <p>Likes Minecraft</p>
-        </div>
-        <div class="person">
-          <div class="person-glow"></div>
-          <h3>Feast</h3>
-          <p>Vibe Coder (only knows lua lmao)</p>
-          <p>Vibe codes random shit</p>
-          <p>Likes Minecraft</p>
-        </div>
-      </div>
-    </section>
-
-    <div class="divider"></div>
-
-    <section class="about-section s-pad" style="padding-top:100px">
-      <div class="s-label">What we do</div>
-      <div class="about-grid">
-        <div class="about-card">
-          <div class="about-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-          </div>
-          <h4>Build fast</h4>
-          <p>We ship tools quickly. No overthinking, no overengineering.</p>
-        </div>
-        <div class="about-card">
-          <div class="about-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          </div>
-          <h4>Open source</h4>
-          <p>Every project is free. Read the code, fork it, do whatever.</p>
-        </div>
-        <div class="about-card">
-          <div class="about-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-          </div>
-          <h4>For everyone</h4>
-          <p>Tools anyone can grab and use. No accounts, no paywalls.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta-s">
-      <div class="cta-glow"></div>
-      <h2>See what we built</h2>
-      <a href="projects.html" class="btn">
-        <span>Browse Projects</span>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
-    </section>
-
-    <footer><p>Theke 2026</p></footer>
-  </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
-  <script src="three-bg.js"></script>
-  <script src="app.js"></script>
+<canvas id="c"></canvas>
+<div class="noise"></div>
+<div class="lines"></div>
+<div class="vignette"></div>
+<nav>
+<a href="index.html" class="logo">Theke</a>
+<div class="nav-r">
+<a href="index.html">home</a>
+<a href="projects.html">projects</a>
+<a href="models.html">3d models</a>
+</div>
+</nav>
+<div class="wrap">
+<section class="hero">
+<div class="hero-glow"></div>
+<div class="hero-ring"></div>
+<div class="hero-ring"></div>
+<div class="hero-ring"></div>
+<h1><span class="w">We</span> <span class="w">Code</span> <span class="w">Random</span> <span class="w">Shit.</span></h1>
+<p class="hero-p">open source from bytez &amp; feast</p>
+<div class="scroll-hint"><div class="sh-line"></div></div>
+<div class="hero-line"></div>
+</section>
+<section class="s-pad">
+<div class="s-label">Team</div>
+<div class="people">
+<div class="person">
+<div class="person-glow"></div>
+<h3>Bytez</h3>
+<p>Knows coding</p>
+<p>Codes random shit</p>
+<p>Likes Minecraft</p>
+</div>
+<div class="person">
+<div class="person-glow"></div>
+<h3>Feast</h3>
+<p>Vibe Coder (only knows lua lmao)</p>
+<p>Vibe codes random shit</p>
+<p>Likes Minecraft</p>
+</div>
+</div>
+</section>
+<div class="divider"></div>
+<section class="about-section s-pad" style="padding-top:100px">
+<div class="s-label">What we do</div>
+<div class="about-grid">
+<div class="about-card">
+<div class="about-card-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+</div>
+<h4>Build fast</h4>
+<p>We ship tools quickly. No overthinking, no overengineering.</p>
+</div>
+<div class="about-card">
+<div class="about-card-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+</div>
+<h4>Open source</h4>
+<p>Every project is free. Read the code, fork it, do whatever.</p>
+</div>
+<div class="about-card">
+<div class="about-card-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+</div>
+<h4>For everyone</h4>
+<p>Tools anyone can grab and use. No accounts, no paywalls.</p>
+</div>
+</div>
+</section>
+<section class="cta-s">
+<div class="cta-glow"></div>
+<h2>See what we built</h2>
+<a href="projects.html" class="btn">
+<span>Browse Projects</span>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+</a>
+</section>
+<footer><p>Theke 2026</p></footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+<script src="three-bg.js"></script>
+<script src="app.js"></script>
 </body>
 </html>

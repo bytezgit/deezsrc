@@ -1,0 +1,86 @@
+/* ─── GLB Viewer additions — append to models.css ─── */
+
+/* Card thumbnail canvas (mini preview) */
+.m-thumb-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Modal full viewer canvas */
+.m-viewer-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  cursor: grab;
+}
+
+.m-viewer-canvas:active {
+  cursor: grabbing;
+}
+
+/* Loading state */
+.m-viewer-loading {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--text-3);
+  background: var(--bg-1);
+  z-index: 2;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.m-viewer-spinner {
+  width: 24px;
+  height: 24px;
+  border: 2px solid var(--border-2);
+  border-top-color: var(--text-2);
+  border-radius: 50%;
+  animation: viewerSpin 0.8s linear infinite;
+}
+
+@keyframes viewerSpin {
+  to { transform: rotate(360deg); }
+}
+
+/* Controls hint */
+.m-viewer-hint {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--text-4);
+  letter-spacing: 0.04em;
+  pointer-events: none;
+  background: rgba(6, 6, 8, 0.6);
+  padding: 4px 12px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  white-space: nowrap;
+  z-index: 3;
+  animation: hintFade 4s ease forwards;
+  animation-delay: 1.5s;
+  opacity: 1;
+}
+
+@keyframes hintFade {
+  0%   { opacity: 1; }
+  70%  { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* Make modal embed relative for absolute children */
+.m-modal-embed {
+  position: relative;
+  overflow: hidden;
+}
