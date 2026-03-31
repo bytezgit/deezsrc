@@ -74,7 +74,7 @@
     "embedUrl": "",
     "downloadUrl": "/models/lowpoly_arm.glb",
     "tags": ["low poly arm", "lowpoly"],
-    "license": "CC-BY"
+    "license": "CC"
   },
   {
     "id": "FPS Arms",
@@ -173,6 +173,50 @@
     "embedUrl": "",
     "downloadUrl": "/models/Cigarette.glb",
     "tags": ["cigarette", "lowpoly"],
+    "license": "CC-BY"
+  },
+  {
+    "id": "Tree",
+    "name": "Tree by purepoly",
+    "author": "purepoly",
+    "source": "sketchfab",
+    "sourceUrl": "https://sketchfab.com/3d-models/low-poly-tree-with-twisting-branches-4e2589134f2442bcbdab51c1f306cd58",
+    "embedUrl": "",
+    "downloadUrl": "/models/low_poly_tree_with_twisting_branches.glb",
+    "tags": ["tree", "lowpoly"],
+    "license": "CC-BY"
+  },
+  {
+    "id": "Tree 2",
+    "name": "Tree by lightguard",
+    "author": "lightguard",
+    "source": "sketchfab",
+    "sourceUrl": "https://sketchfab.com/3d-models/leafy-tree-low-poly-6db96be0ea694f558836e662c595788a",
+    "embedUrl": "",
+    "downloadUrl": "/models/leafy_tree_-_low_poly.glb",
+    "tags": ["tree", "lowpoly"],
+    "license": "CC-BY"
+  },
+  {
+    "id": "Pirate Sword",
+    "name": "Pirate Sword by Anna Vidal (Milaein)",
+    "author": "Anna Vidal (Milaein)",
+    "source": "sketchfab",
+    "sourceUrl": "https://sketchfab.com/3d-models/low-poly-pirate-sword-89bb2ffcd83043a29c5886d920497086",
+    "embedUrl": "",
+    "downloadUrl": "/models/low_poly_pirate_sword.glb",
+    "tags": ["sword", "lowpoly"],
+    "license": "CC-BY"
+  },
+  {
+    "id": "Sword",
+    "name": "Sword by mnichols",
+    "author": "mnichols",
+    "source": "sketchfab",
+    "sourceUrl": "https://sketchfab.com/3d-models/stylized-pixel-sword-25500dc34a0546748573f8b3022dd91b",
+    "embedUrl": "",
+    "downloadUrl": "/models/stylized_pixel_sword.glb",
+    "tags": ["sword", "lowpoly"],
     "license": "CC-BY"
   }
 ]
